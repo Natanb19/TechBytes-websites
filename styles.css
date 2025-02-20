@@ -1,0 +1,227 @@
+/* styles.css */
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;  
+}
+
+.image-fit img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Header Styles */
+.header {
+  background: #1a1a1a;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-size-adjust: inherit;
+  font-weight: 300;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+.navbar {
+  background: #333;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: #444;
+}
+
+/* Main Content */
+#hero-container {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('https://source.unsplash.com/1200x400/?technology,electronics;') center/cover;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+/* Posts and Articles */
+.featured-posts {
+  display: grid;            
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 2rem 0;
+}
+
+.post-card, .news-article {
+  background: white
+  url('https://source.unsplash.com/1200x400/?technology,electronics;') center/cover;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.article-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.read-more-btn {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #0056b3;
+  opacity: 0.9;
+}
+
+.read-more-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+ }
+
+ .news-item {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+/* Newsletter Form */
+.newsletter {
+  background: #155724;
+  padding: 2rem ;
+  border-radius: 8px;
+  margin: 1rem 0;
+  text-align: center;
+  height: auto;
+}
+#newsletterForm {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#newsletterForm input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 300px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 0;
+}
+
+.social-links a i {
+  margin-top: 1rem;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  margin: 0 1rem;
+  font-size: 18px;
+}
+
+/* Feedback Messages */
+.feedback {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.feedback.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.feedback.error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+
+/* Add to styles.css */
+
+
+
+
+
+/* Normalize box sizing */
+*, *::before, *::after {
+box-sizing: border-box;
+}
